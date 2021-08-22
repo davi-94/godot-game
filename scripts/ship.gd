@@ -20,18 +20,19 @@ func _process(delta):
 # ship controler
 func handle_movement(delta):
 	var position = Vector2()
+	var step = 1
 	
 	if Input.is_action_pressed("ui_left") || Input.is_key_pressed(KEY_A):
-	  position.x -= 1
+	  position.x -= step
 	
 	if Input.is_action_pressed("ui_right") || Input.is_key_pressed(KEY_D):
-	  position.x += 1
+	  position.x += step
 
 	if Input.is_action_pressed("ui_up") || Input.is_key_pressed(KEY_W):
-	  position.y -= 1
+	  position.y -= step
 	
 	if Input.is_action_pressed("ui_down") || Input.is_key_pressed(KEY_S):
-	  position.y += 1
+	  position.y += step
 	
 	if Input.is_action_just_pressed("ui_accept"):
 		var shoot = PRE_SHOOT.instance()
