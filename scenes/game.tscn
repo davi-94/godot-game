@@ -24,7 +24,7 @@ tracks/0/keys = {
 [node name="game" type="Node2D"]
 
 [node name="background" type="Sprite" parent="."]
-position = Vector2( 0, -0.396851 )
+position = Vector2( 0.0631409, -0.0631413 )
 texture = ExtResource( 1 )
 centered = false
 

@@ -28,7 +28,7 @@ position = Vector2( 0, 4 )
 texture = ExtResource( 1 )
 hframes = 2
 vframes = 2
-frame = 2
+frame = 3
 
 [node name="anim" type="AnimationPlayer" parent="sprite"]
 autoplay = "default"

@@ -36,8 +36,16 @@ func handle_movement(delta):
 	
 	if Input.is_action_just_pressed("ui_accept"):
 		var shoot = PRE_SHOOT.instance()
+		#var shoot_1 = PRE_SHOOT.instance()
+		#var shoot_2 = PRE_SHOOT.instance()
+		
 		get_parent().add_child(shoot)
+		#get_parent().add_child(shoot_1)
+		#get_parent().add_child(shoot_2)
+		
 		shoot.global_position = global_position + Vector2(0, -40)
+		#shoot_1.global_position = global_position + Vector2(10, -40)
+		#shoot_2.global_position = global_position + Vector2(-10, -40)
 	
 	translate(Vector2(position.x, position.y) * speed * delta)
 	
